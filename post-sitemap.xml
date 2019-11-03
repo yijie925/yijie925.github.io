@@ -7,8 +7,32 @@
     </url>
 
     <url>
+        <loc>https://yijie925.github.io/article/12/</loc>
+        <lastmod>2019-11-03T15:04:45.403Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://yijie925.github.io/article/Blog/</loc>
+        <lastmod>2019-11-03T14:59:54.503Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>https://yijie925.github.io/article/Hello_World/</loc>
-        <lastmod>2019-10-31T12:01:02.646Z</lastmod>
+        <lastmod>2019-11-03T14:46:04.022Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://yijie925.github.io/article/bal/</loc>
+        <lastmod>2019-11-03T14:21:53.604Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 

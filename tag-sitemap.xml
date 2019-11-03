@@ -2,8 +2,29 @@
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
     <url>
+        <loc>https://yijie925.github.io/tags/Hello/</loc>
+        <lastmod>2019-11-03T14:46:04.022Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
         <loc>https://yijie925.github.io/tags/Hexo/</loc>
-        <lastmod>2019-10-31T12:01:02.646Z</lastmod>
+        <lastmod>2019-11-03T14:46:04.022Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://yijie925.github.io/tags/number/</loc>
+        <lastmod>2019-11-03T15:04:45.403Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://yijie925.github.io/tags/jpg/</loc>
+        <lastmod>2019-11-03T15:04:45.403Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
