@@ -7,6 +7,14 @@
     </url>
 
     <url>
+        <loc>https://yijie925.github.io/article/Profile/</loc>
+        <lastmod>2020-06-27T14:47:43.093Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>https://yijie925.github.io/article/%E4%B8%80%E4%BA%9B%E5%B0%8F%E6%96%87/</loc>
         <lastmod>2020-02-12T08:59:23.457Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -73,14 +81,6 @@
     <url>
         <loc>https://yijie925.github.io/article/experience/</loc>
         <lastmod>2019-11-28T10:46:19.591Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://yijie925.github.io/article/Profile/</loc>
-        <lastmod>2019-11-28T09:22:30.454Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
