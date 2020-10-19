@@ -7,16 +7,32 @@
     </url>
 
     <url>
-        <loc>https://yijie925.github.io/article/Profile/</loc>
-        <lastmod>2020-06-27T14:47:43.093Z</lastmod>
+        <loc>https://yijie925.github.io/article/%E4%B8%80%E4%BA%9B%E5%B0%8F%E6%96%87/</loc>
+        <lastmod>2020-10-19T16:27:39.450Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
     </url>
 
     <url>
-        <loc>https://yijie925.github.io/article/%E4%B8%80%E4%BA%9B%E5%B0%8F%E6%96%87/</loc>
-        <lastmod>2020-02-12T08:59:23.457Z</lastmod>
+        <loc>https://yijie925.github.io/article/academic/</loc>
+        <lastmod>2020-10-19T16:24:50.865Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://yijie925.github.io/article/%E5%86%99%E5%9C%A8%E7%8C%AA%E7%8C%AA%E6%9D%A5%E4%B9%8B%E5%89%8D/</loc>
+        <lastmod>2020-06-27T14:50:59.682Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://yijie925.github.io/article/Profile/</loc>
+        <lastmod>2020-06-27T14:49:42.688Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -49,14 +65,6 @@
     <url>
         <loc>https://yijie925.github.io/article/%E4%B8%80%E4%BA%9B%E8%AE%BF%E8%B0%88/</loc>
         <lastmod>2020-02-12T07:45:44.519Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://yijie925.github.io/article/academic/</loc>
-        <lastmod>2020-02-11T15:14:35.562Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -105,14 +113,6 @@
     <url>
         <loc>https://yijie925.github.io/article/%E7%94%9F%E5%91%BD%E5%BF%85%E6%9C%89%E8%A3%82%E7%BC%9D/</loc>
         <lastmod>2019-11-21T11:51:53.050Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://yijie925.github.io/article/%E5%86%99%E5%9C%A8%E7%8C%AA%E7%8C%AA%E6%9D%A5%E4%B9%8B%E5%89%8D/</loc>
-        <lastmod>2019-11-21T10:45:56.193Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
