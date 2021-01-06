@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Head tag -->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="google-site-verification" content="xBT4GhYoi5qRD5tr338pgPM5OWHHIDR6mNg1a3euekI" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="keyword"  content="">
+    <link rel="shortcut icon" href="/img/ironman-draw.png">
+    <!-- Place this tag in your head or just before your close body tag. -->
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+    <title>
+        
+          一些小文 - YiJie | Blog
+        
+    </title>
+
+    <link rel="canonical" href="https://yijie925.github.io/article/一些小文/">
+
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+
+    <!-- Custom CSS --> 
+    <link rel="stylesheet" href="/css/beantech.min.css">
+
+    <link rel="stylesheet" href="/css/donate.css">
+    
+    <!-- Pygments Highlight CSS -->
+    <link rel="stylesheet" href="/css/highlight.css">
+
+    <link rel="stylesheet" href="/css/widget.css">
+
+    <link rel="stylesheet" href="/css/rocket.css">
+
+    <link rel="stylesheet" href="/css/signature.css">
+
+    <link rel="stylesheet" href="/css/toc.css">
+
+    <!-- Custom Fonts -->
+    <!-- <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css"> -->
+    <!-- Hux change font-awesome CDN to qiniu -->
+    <link href="https://cdn.staticfile.org/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+
+    <!-- Hux Delete, sad but pending in China
+    <link href='http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/
+    css'>
+    -->
+
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- ga & ba script hoook -->
+    <script></script>
+</head>
+
+
+<!-- hack iOS CSS :active style -->
+<body ontouchstart="">
+	<!-- Modified by Yu-Hsuan Yen -->
+<!-- Post Header -->
+<style type="text/css">
+    header.intro-header{
+        
+            background-image: url('/img/article_header/article_bg.jpg')
+            /*post*/
+        
+    }
+    
+</style>
+
+<header class="intro-header" >
+    <!-- Signature -->
+    <div id="signature">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                
+                    <div class="post-heading">
+                        <div class="tags">
+                            
+                              <a class="tag" href="/tags/#青峰" title="青峰">青峰</a>
+                            
+                        </div>
+                        <h1>一些小文</h1>
+                        <h2 class="subheading"></h2>
+                        <span class="meta">
+                            Posted by YiJie on
+                            2020-02-12
+                        </span>
+                    </div>
+                
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+	
+    <!-- Navigation -->
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">YiJie&#39;s Blog</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <!-- Known Issue, found by Hux:
+            <nav>'s height woule be hold on by its content.
+            so, when navbar scale out, the <nav> will cover tags.
+            also mask any touch event of tags, unfortunately.
+        -->
+        <div id="huxblog_navbar">
+            <div class="navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="/">Home</a>
+                    </li>
+
+                    
+
+                        
+                    
+
+                        
+                        <li>
+                            <a href="/about/">about</a>
+                        </li>
+                        
+                    
+
+                        
+                        <li>
+                            <a href="/archive/">Archives</a>
+                        </li>
+                        
+                    
+
+                        
+                        <li>
+                            <a href="/tags/">Tags</a>
+                        </li>
+                        
+                    
+                    
+                </ul>
+            </div>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+</nav>
+<script>
+    // Drop Bootstarp low-performance Navbar
+    // Use customize navbar with high-quality material design animation
+    // in high-perf jank-free CSS3 implementation
+    var $body   = document.body;
+    var $toggle = document.querySelector('.navbar-toggle');
+    var $navbar = document.querySelector('#huxblog_navbar');
+    var $collapse = document.querySelector('.navbar-collapse');
+
+    $toggle.addEventListener('click', handleMagic)
+    function handleMagic(e){
+        if ($navbar.className.indexOf('in') > 0) {
+        // CLOSE
+            $navbar.className = " ";
+            // wait until animation end.
+            setTimeout(function(){
+                // prevent frequently toggle
+                if($navbar.className.indexOf('in') < 0) {
+                    $collapse.style.height = "0px"
+                }
+            },400)
+        }else{
+        // OPEN
+            $collapse.style.height = "auto"
+            $navbar.className += " in";
+        }
+    }
+</script>
+
+
+    <!-- Main Content -->
+    <!-- Modify by Yu-Hsuan Yen -->
+
+<!-- Post Content -->
+<article>
+    <div class="container">
+        <div class="row">
+
+            <!-- Post Container -->
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                post-container">
+
+                <p><strong>文/青峰</strong></p>
+<h2 id="关于春春">关于春春</h2>
+<p>今天在节目中听到了春春说了一段话：<br>
+「我自己的成长环境是比较特殊的的也是一路受到质疑过来的。我就一直坚持我想做的东西。这个路，很苦，我总是关闭自己。我想起那个李宇春，就是很封闭自我，但是她很强，她就一直这样抗，扛扛扛，但是扛不意味著，她没有受到伤害。只是她扛住了，可是心裡受到了什麽东西，只有她自己知道」<br>
+很有感触。<br>
+是啊，只有自己知道。<br>
+因为你知道，别人不想知道。<br>
+但会好的，后来自己会好的。<br>
+向生命鞠躬。<br>
+爱你哦春。</p>
+<h2 id="来自kasen">来自Kasen</h2>
+<p>我们有著像家人一样的关係。我私下都是叫他哥哥,而我是他眼中虽然任性但是一定挺他的小妹妹。<br>
+青峰是真的,像照顾妹妺那样照顾我。而且当青峰愿意去照顾一个人的时候,那个人通常会是全世界最幸福的。因为他是我见过最贴心的人之一,也有著跟我一样满溢的多愁善感。他知道我的个性,所以他会用符合我个性的方式去对待我。有一次我问他,我可不可以把他当成自己的哥哥。我没有哥哥或姊姊。我不知道被哥哥姊姊照顾是什麽样的感觉,在我认识青峰之前。他给了我一个我不会忘记的答案:「当然可以,而且我一直都是把你当成自己的妹妹的。」<br>
+我曾经在自己看板偶而提起一些想要听的CD,提起自己想更广泛地听音乐;过不久青峰跟我说,他可以借我。而且不但借我,他还仔细挑了他特别推荐的。他就这样一囗气借了我差不多两百张CD,而它们现在还在我房间裡。青峰总是这样的,只要他帮得到我的事,他从来不会拒绝我,而且因为他知道我这人就是不好意思开囗,所以在我开囗之前他就已经先来了。也曾经在我们为青峰送旧的餐会上,其实他肚子不舒服,却还是忍耐著说说笑笑跟我们吃完饭,只因为他觉得这一天很重要;我参加金旋奖比赛失利后说著丧气话,他不惜讲起当年他玩音乐碰到的鸟事鼓励我坚持下去。青峰总是过份贴心地照顾著我。<br>
+我们是两个太多愁善感的人碰到一起。我们有著无数个交换心事的凌晨,甚至几近心有灵犀。曾经有一晚,我正看著他的文字担心著他,心裡头浮现了「很想念他」这样的句子。然后,就在下一秒,我竟然看见他丢来的水球,上面写著,|missyouo那个瞬间我到现在都还记得,那是我此生最快速落涙的一次,只用了一秒钟。有时明明我们同时低潮,但他自己的总先搁著,他永远都是先问我好不好。<br>
+我认识青峰的时间点,刚好是他们开始起飞的时候。所以我认识他越久,他们就越红,听众也越多。<br>
+这些年来,我从来不觉得,他跟外界的观众看到的比起来,有什麽幻灭或者是虚伪的。相反地,我看到的却是更好的,而且越认识,就觉得越好。身为他的朋友,是很幸运的。那所谓的幸运,绝对跟他的公众身份无关,而是因为,这个人是我认识过最贴心最善良最为朋友著想的人。这个人就是吴青峰,不管他是什麽身份或者主唱,我都依然如此感觉。</p>
+<h2 id="来自休团前最后一场">来自休团前最后一场</h2>
+<p>苏打绿就要跟大家暂时分开一阵子<br>
+但是这一切都是为了我们再遇见的时候可以更好<br>
+有更好的作品可以带来给你们<br>
+一直以来真的很谢谢你们愿意呈稣打绿的知音<br>
+一般大家的认知在譬如说偶像跟歌迷之间的关係<br>
+我觉得都不适合套用在苏打绿<br>
+我觉得苏打绿真的很难得的在这十几年当中<br>
+找到非常非常多的知音<br>
+不管是在音乐上面个性上面我们相处上面<br>
+还有很多很多我们做人为人处事上面<br>
+还有我们想要讲的很多很多的很多很多的理念<br>
+很多很多想要用这麽微小的身体去改变这个世界的妄想<br>
+都因为你们好像慢慢的慢慢的慢慢的<br>
+有一点点的改变<br>
+所以你们一定要紧抓著这样的改变<br>
+让自己也往前走然后让自己也变成改变的一份子<br>
+因为我们的世界很需要改变<br>
+我们的世界也有很多很多很好的东西等待我们挖掘<br>
+而不要总是在很多很好的东西裡面<br>
+只去看到那一点点不好的事情<br>
+而且拼命把它放大<br>
+拼命用八卦的心态用轻蔑的心态用践踏的心情<br>
+去放大那一点<br>
+那样的东西不会是我们想要的世界<br>
+而且有一天你就会成为那样子的黑点被放大的黑点<br>
+所以让我们看待很多事情从很多不好的东西裡面<br>
+找到最好的那个东西这些才是最难的<br>
+然后希望我们这几年都可以成为这样的人<br>
+然后有很多很多事情现在等著我们去改变<br>
+然后我们也都继续加油好不好<br>
+你们今天不管是你们<br>
+抱持来的信念或是你们举的旗帜<br>
+或是你们想说的话都是你们很珍贵的信念<br>
+请你们一定要请你们一定要继续<br>
+温柔地推翻这个世界</p>
+<h2 id="上海春浪">上海春浪</h2>
+<p>我觉得看到我晿有时候不是你们的责任,是我的责任·所以我会加油到更多的地方,不要让你们这样到处跑。我就慢慢加油吧。那比起讲话我觉得还是晿更多的给你们比较重要。</p>
+<p>又要talking了怎麽这麽麻烦,我黉好奇的一般你们想要听到的talking是怎样的。有人举牌子说快骂我&lt;笑&gt;应该平常蛮少被人骂的哦。我跟你说,只有很少被骂的人才会享受被人骂的感觉·你们没有一个人会比我懂得被骂的感觉&lt;笑&gt;但是也无妨啦,反正,人生嘛。尤其是活到我这把年纪了,我觉得好好在音乐节的氛围下享受音乐气氛,会比看到我长什麽样子重要很多,因为我向来有头的可能都不是外表的部分&lt;笑&gt;<br>
+我觉得最近每一次尝试每一首我是抱著很轻鬆的心态,其实我真的没有抱著任何目的要回来晿,单纯就是喜欢晿。再次在大家面前继续晿,不管是做自己的单曲或者戏剧得或者花博的,其实我是抱著比轻鬆的心态来做的,也希望你们能抱著比较轻鬆的心情去看待件事情·因为其实对我来讲,每一首都会有不一样的样子,跟以前很不一样,对我来讲那个是做了十几年音乐到现在还有趣的地方。我当然也知道每一次的每一首不可能都是经典,也不一定他的成果很好,也不一定让你们喜欢。人的才华也有限,我不可能写每一首都是杰作。但是我可以确保的是,在写个的当下我一定是用自己的真心,一定是对得起自己的,这一点我一定可以跟你们保证,不管每一首歌出去的样子会是什麽样子,我希望你们可以听到那首它在很多不一样的时空可能会有的样子,也有可能属于那首跟你才有的样子</p>
+<p>当我很孤单的时候,我会听,我会觉得有一种福至心灵的感觉,如果你有时候也会有一点点不被理解或者是觉得很寂寞的时候,或许可以让这首陪伴你<br>
+受伤又怎样<br>
+反复希望又失望<br>
+一路上慢慢走慢慢慢慢的闯<br>
+抓了之后又放<br>
+没有人知道什麽是方向<br>
+没有人白要去的地方<br>
+当我决定要牵住你的手<br>
+同时也准备好受伤<br>
+没有人能说我样叫傻<br>
+没有人能说我这样太狂<br>
+当我确定要牵住你的手<br>
+可不可以不要受伤<br>
+或许受伤才是成长</p>
+<p>我的影子在这个世界漂流<br>
+灰麈在云霄之中逐渐没<br>
+来来去去我的心谁也不懂<br>
+等你照进我的窗口<br>
+热情是热情.但是不要让过多的热情变成压力,我希望我们都会在这样子的每天都在改变的环境中适应,然后让自己更好我觉得每一次到了这个时候,想要讲一些什麽,和永远讲不完的话,永是心中一个很难平衡的地方,但是我觉得我没有那麽(虽然我很话痨啦)真正的喜欢讲话这件事情,虽然我其实常常会憋不住,然后常常会讲出一些不是很恰当的话。</p>
+<p>但是我觉得真正可以用音乐说话的时刻都是我比较开心的时候,当它变成曲的时候其实也都经过了一些沉淀,也是比较成熟的方式,所以还是很谢谢你们愿意用音乐来聆听我在裡面说话的声音</p>
+<p>只为了快感的衝动<br>
+只为了本能的寂寞<br>
+来到了现在的人生<br>
+却是创造我的人生<br>
+不奢求快乐的感受<br>
+不奢求幸褔的生活<br>
+我已经学会了接受<br>
+接受了所有爱的折磨<br>
+只属于快感的衝动<br>
+只属于不能的寂寞<br>
+战斗的对手我不恨<br>
+捍卫的并菲爱的人<br>
+却害怕<br>
+黑夜带来的<br>
+盘旋不去的什麽</p>
+<p>其实从今年再回来晿之后,的确真的有很多很多不一样的疑问的声音在我身边。其实出来唱并没有什麽特别的原因,所有的原因其实真的就只是我很喜欢唱,所以想要出来唱而已当然也是因为现在其他团员他们也没空吧&lt;笑&gt;我觉得就是趁他们都在忙自己的事情我也可以出来打个工这样&lt;笑&gt;</p>
+<p>我觉得我的确有我自己想唱的,有我自己想要呈现的方式、这几次的音乐节很感谢有很多的音乐家在身后陪我一起把这些曲改变成比较像我自己的样子·它虽然是我的但是跟大家所想像中的我的可能没那麽像,我觉得它可能更贴近我自己一点·我觉得自己晿其实踉背叛没有关係,我有时候不太能够理解,为什麽经待过一个团体的人就不能够为自己唱一些歌曲,我觉得我自己是有这样的权利的,我很开心我有很多苏打绿团员的祝福,所以我才可以扺挡住很多不一样的声音。</p>
+<p>我没有任何要哭的情绪,你们不用担心,因为真正伤心的时候我是不会让你们看到的。我只能说其实真的真的大部分得我是很开心的,可以用音乐去表达每一个即便是瑕疵的自己,我觉得不是大风大浪,不是一个真正了不起的杰作,那都代表著我某一块,所以我很开心,我还是可以跟大家分享每一个不太完美的作品不管是怎麽样的作品,都谢谢你们·很多时候这些歌在发表的时候,大家可能会因为表面上的一些现象,或是说这首的成果,或是首歌结合的对象,来推判写这首的很多原因。我觉得太多时候我们都倒果为因了,我特别感谢在这其中其实你们有很多人是可以看得出来在这首表像之内的东西·所以我今天要特别谢谢每一个可以看到每一首不只是表像的东西.这也是我一直以来可以在裡面传达很多对不一样事件的法和不一样思念的方式,我吧我的所有所有每一种思都放在裡面,不只是我好想你,单纯是感情的思念,也有很多对大自然,对自己初的一些思念。希望你们可以继续感受在大家很肤浅的一层皮囊之下的心情,谢谢你们。</p>
+<h2 id="2016">2016</h2>
+<p>你可以当一个自以为是的人，那是你的事，我们不会改变你；但是请不要用你的自以为是去规定别人怎麽过活，因为我不会想改变你的自以为是，也请你成全我在我自己的空间裡自由地自以为是。「不喜欢不要看」这句话，常常得到「没有心胸接受别人看法」的诠释，但很多状况，这句话真的很合理。你可以不喜欢，但不要硬要去要求别人改变，变成你喜欢的样子。不喜欢还要看，看完还硬要别人改变，而且无关对错，只是喜好问题，却要别人照著你的想法，那岂不是让自己很傻吗！<br>
+没什麽事，只是日日可见的一个杂感。你们是不是也常常遇到这样的状况呢。</p>
+<p>2016.6.24<br>
+即将开始的InSummer巡迴，其实从好几年前就有这个构想：把过往的专辑好好唱过一遍。年初开始计划，过程中大家一直问我：「你确定吗？」我一直觉得不就是一个礼拜一张专辑主题吗，何必紧张兮兮，直到前一阵子，我才意识到，啊，这样是七十天内就有二十八场的意思…我是不是太晚意识到这点了，但是已经来不及了XD</p>
+<p>每天都有排练不完的歌，但是每天都有唤醒不停的回忆，可以这样一一把自己以往的所有作品细细对待，还有从前唱过的别人的歌，那些在你生命裡各自代表著哪些故事的歌，有陪过自己痛心的，也有笑得甜蜜的，有影响过自己的态度的，有不被体解也要唱的…</p>
+<p>前天算了一下，有两百三十三首歌要练，虽然有题词机，大部份我还是需要背下来（其实在台上怎麽可能好意思常看题词机，尤其小场地，那角度根本无法看好吗！）一个简单的想法，竟然变成史上最硬的计划。（七个人各自在角落垂泪）</p>
+<p>但是十二年来，以为会腻的那些事，竟然还没有腻的一天，每一天几乎都可以带著新的热情去做新的事，这实在是难以言说的幸运、幸福。我几乎觉得我的生命只有这些就够了（其实也差不多就只是这些了，我实在没有别的事会做），每一次做专辑，每一次新的演出，怎麽都还是可以有这麽多的疯狂偏执，就算他人可能看不出特别之处，自己的身体裡面却总是沸腾著。</p>
+<p>大部份的自己，尤其完全属于我自己时的自己，我想是比较低沉的，但是每一次想到这些，我总是很感动，只有这件事，是我一直想做，而且我可以一直做，好像生命可以只有这一件事，嗯，应该说是，我的生命就是这一件事。</p>
+<p>也应该是这样一件事，一直让厌世的我，拼了命努力活下去吧。</p>
+<p>谢谢老天爷给我的，让我唱，让我写，感谢你们听我唱，所以我一直，还活著，还这样好好活著。</p>
+<p>（有些朋友别急，别急，别觉得被遗忘，你们知道，我从不遗忘你们，你们是牵挂，在我心上。）</p>
+
+                
+
+                <hr>
+                <!-- Pager -->
+                <ul class="pager">
+                    
+                    
+                        <li class="next">
+                            <a href="/article/谈商业/" data-toggle="tooltip" data-placement="top" title="谈商业">Next Post &rarr;</a>
+                        </li>
+                    
+                </ul>
+
+                <br>
+
+                <!--打赏-->
+                
+                <!--打赏-->
+
+                <br>
+                <!--分享-->
+                
+                    <div class="social-share"  data-wechat-qrcode-helper="" align="center"></div>
+                    <!--  css & js -->
+                    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/social-share.js/1.0.16/css/share.min.css">
+                    <script src="https://cdnjs.cloudflare.com/ajax/libs/social-share.js/1.0.16/js/social-share.min.js"></script>
+                
+                <!--分享-->
+                <br>                       
+                
+                <!-- require APlayer -->
+                
+
+                <!-- duoshuo Share start -->
+                
+                <!-- 多说 Share end-->
+
+                <!-- 多说评论框 start -->
+                
+                <!-- 多说评论框 end -->
+
+                <!-- disqus comment start -->
+                
+                <!-- disqus comment end -->
+
+                
+
+            </div>
+            
+            <!-- Tabe of Content -->
+            <!-- Table of Contents -->
+
+  
+    <style>
+      span.toc-nav-number{
+        display: none
+      }
+    </style>
+  
+    
+      <aside id="sidebar">
+        <div id="toc" class="toc-article">
+        <strong class="toc-title">Contents</strong>
+        
+          <ol class="toc-nav"><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#关于春春"><span class="toc-nav-number">1.</span> <span class="toc-nav-text">&#x5173;&#x4E8E;&#x6625;&#x6625;</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#来自kasen"><span class="toc-nav-number">2.</span> <span class="toc-nav-text">&#x6765;&#x81EA;Kasen</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#来自休团前最后一场"><span class="toc-nav-number">3.</span> <span class="toc-nav-text">&#x6765;&#x81EA;&#x4F11;&#x56E2;&#x524D;&#x6700;&#x540E;&#x4E00;&#x573A;</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#上海春浪"><span class="toc-nav-number">4.</span> <span class="toc-nav-text">&#x4E0A;&#x6D77;&#x6625;&#x6D6A;</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#2016"><span class="toc-nav-number">5.</span> <span class="toc-nav-text">2016</span></a></li></ol>
+        
+        </div>
+      </aside>
+    
+
+                
+            <!-- Sidebar Container -->
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                sidebar-container">
+
+                <!-- Featured Tags -->
+                
+                <section>
+                    <!-- no hr -->
+                    <h5><a href="/tags/">FEATURED TAGS</a></h5>
+                    <div class="tags">
+                       
+                          <a class="tag" href="/tags/#青峰" title="青峰">青峰</a>
+                        
+                    </div>
+                </section>
+                
+
+                <!-- Friends Blog -->
+                
+                <hr>
+                <h5>FRIENDS</h5>
+                <ul class="list-inline">
+
+                    
+                        <li><a href="https://me.csdn.net/For_Learn_Java" target="_blank">CSDN</a></li>
+                    
+                        <li><a href="http://www.zhihu.com/people/gyj-9-29" target="_blank">知乎</a></li>
+                    
+                        <li><a href="https://www.jianshu.com/u/ba51c1b9f672" target="_blank">简书</a></li>
+                    
+                </ul>
+                
+            </div>
+        </div>
+    </div>
+</article>
+
+
+
+
+
+
+
+
+<!-- async load function -->
+<script>
+    function async(u, c) {
+      var d = document, t = 'script',
+          o = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+      o.src = u;
+      if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+      s.parentNode.insertBefore(o, s);
+    }
+</script>
+<!-- anchor-js, Doc:http://bryanbraun.github.io/anchorjs/ -->
+<script>
+    async("https://cdn.bootcss.com/anchor-js/1.1.1/anchor.min.js",function(){
+        anchors.options = {
+          visible: 'hover',
+          placement: 'left',
+          icon: 'ℬ'
+        };
+        anchors.add().remove('.intro-header h1').remove('.subheading').remove('.sidebar-container h5');
+    })
+</script>
+<style>
+    /* place left on bigger screen */
+    @media all and (min-width: 800px) {
+        .anchorjs-link{
+            position: absolute;
+            left: -0.75em;
+            font-size: 1.1em;
+            margin-top : -0.1em;
+        }
+    }
+</style>
+
+
+<!-- chrome Firefox 中文锚点定位失效-->
+<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.js"></script>
+<!-- smooth scroll behavior polyfill  -->
+<script type="text/javascript" src="/js/smoothscroll.js"></script>
+<script>
+        $('#toc').on('click','a',function(a){
+            // var isChrome = window.navigator.userAgent.indexOf("Chrome") !== -1;
+            // console.log(window.navigator.userAgent,isChrome)
+                // if(isChrome) {
+                    // console.log(a.currentTarget.outerHTML);
+                    // console.log($(a.currentTarget).attr("href"));
+                    //跳转到指定锚点
+                    // document.getElementById(a.target.innerText.toLowerCase()).scrollIntoView(true);
+                    document.getElementById($(a.currentTarget).attr("href").replace("#","")).scrollIntoView({behavior: 'smooth' });
+                // }
+        })  
+</script>
+
+
+    <!-- Footer -->
+    <!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <ul class="list-inline text-center">
+                
+                
+                
+
+                
+
+                
+
+                
+                    <li>
+                        <a target="_blank"  href="https://github.com/yijie925">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                
+
+                
+
+                </ul>
+                <!--
+                <p class="copyright text-muted">
+                    Copyright &copy; YiJie 2020 
+                    <br>
+                    Theme by <a href="http://beantech.org">BeanTech</a>
+                    <span style="display: inline-block; margin: 0 5px;">
+                        <i class="fa fa-heart"></i>
+                    </span>
+                    re-Ported by <a href="http://www.huweihuang.com">胡伟煌</a> |
+                    <iframe
+                        style="margin-left: 2px; margin-bottom:-5px;"
+                        frameborder="0" scrolling="0" width="91px" height="20px"
+                        src="https://ghbtns.com/github-btn.html?user=huweihuang&repo=hexo-theme-huweihuang&type=star&count=true" >
+                    </iframe>
+                </p>
+                -->
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- jQuery -->
+<script src="/js/jquery.min.js"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="/js/bootstrap.min.js"></script>
+
+<!-- Custom Theme JavaScript -->
+<script src="/js/hux-blog.min.js"></script>
+
+
+<!-- async load function -->
+<script>
+    function async(u, c) {
+      var d = document, t = 'script',
+          o = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+      o.src = u;
+      if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+      s.parentNode.insertBefore(o, s);
+    }
+</script>
+
+<!-- 
+     Because of the native support for backtick-style fenced code blocks 
+     right within the Markdown is landed in Github Pages, 
+     From V1.6, There is no need for Highlight.js, 
+     so Huxblog drops it officially.
+
+     - https://github.com/blog/2100-github-pages-now-faster-and-simpler-with-jekyll-3-0  
+     - https://help.github.com/articles/creating-and-highlighting-code-blocks/    
+-->
+<!--
+    <script>
+        async("http://cdn.bootcss.com/highlight.js/8.6/highlight.min.js", function(){
+            hljs.initHighlightingOnLoad();
+        })
+    </script>
+    <link href="http://cdn.bootcss.com/highlight.js/8.6/styles/github.min.css" rel="stylesheet">
+-->
+
+
+<!-- jquery.tagcloud.js -->
+<script>
+    // only load tagcloud.js in tag.html
+    if($('#tag_cloud').length !== 0){
+        async("https://yijie925.github.io/js/jquery.tagcloud.js",function(){
+            $.fn.tagcloud.defaults = {
+                //size: {start: 1, end: 1, unit: 'em'},
+                color: {start: '#bbbbee', end: '#0085a1'},
+            };
+            $('#tag_cloud a').tagcloud();
+        })
+    }
+</script>
+
+<!--fastClick.js -->
+<script>
+    async("https://cdn.bootcss.com/fastclick/1.0.6/fastclick.min.js", function(){
+        var $nav = document.querySelector("nav");
+        if($nav) FastClick.attach($nav);
+    })
+</script>
+
+
+<!-- Google Analytics -->
+
+
+<script>
+    // dynamic User by Hux
+    var _gaId = 'UA-XXXXXXXX-X';
+    var _gaDomain = 'yoursite';
+
+    // Originial
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', _gaId, _gaDomain);
+    ga('send', 'pageview');
+</script>
+
+
+
+
+<!-- Baidu Tongji -->
+
+<script>
+    // dynamic User by Hux
+    var _baId = 'xxx';
+
+    // Originial
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "//hm.baidu.com/hm.js?" + _baId;
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+</script>
+
+
+
+
+
+
+	<a id="rocket" href="#top" class=""></a>
+	<script type="text/javascript" src="/js/totop.js?v=1.0.0" async=""></script>
+    <script type="text/javascript" src="/js/toc.js?v=1.0.0" async=""></script>
+<!-- Image to hack wechat -->
+<img src="https://yijie925.github.io/img/icon_wechat.png" width="0" height="0" />
+<!-- Migrate from head to bottom, no longer block render and still work -->
+
+</body>
+
+</html>
